@@ -1,5 +1,7 @@
 Projet individuel du cours de programmation impérative de première année du cycle d'ingénieur de l'ENSIIE
 
+http://web4.ensiie.fr/~guillaume.burel/cours/IPI/projet_2020.html[Lien vers le sujet du projet]
+
 Note obtenue : 18,5/20
 
 = User manual for the game
