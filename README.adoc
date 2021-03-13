@@ -1,0 +1,44 @@
+= User manual for the game
+
+== Context
+
+The game is played on an n×n size board with stacks of tokens, each player having a different number. Initially no tokens are present.
+
+The game is played with any number of players taking turns.
+
+The object of the game is to have as many of your tokens as possible at the top of the stacks once the board is completely full.
+
+
+== Rules
+
+* Initially, the board is empty.
+
+* Each player plays in turn.
+
+* In each of his turns, the player places one of his tokens on one of the boxes of the board, stacking it on top of any tokens already present.
+
+* If the two tokens at the top of the stack are the same, the box is activated:
+
+** Both tokens are removed from the stack;
+
+** Player's tokens are added to the four adjacent boxes, provided they have not already been activated on that player's turn.
+
+** Tokens added on the adjacent boxes can activate those boxes, if they also had a token from the same player on top. Tokens are then added to their adjacent boxes that have not already been activated this turn, and so on.
+
+== Launch and play the game
+
+. Even if a `prog` file is present, we advice you to clean the executable and compile the project to run it properly. To do so, please enters these commands : 
+.. `make clean`
+.. `make`
+
+. To start the game you need to execute `prog`. To do so, you have to enter the command `./prog` .
+
+. Then you will be asked to enter the number of players who take part in the game and then the size of the board for the game. This two numbers must be positive.
+
+. For each player his turn will be as follows :
+.. The board is printed.
+.. The player is asked to choose a position on the board. For instance, for the box at column 3 and line 2, the player must enter "3 2". The space between the two intergers is very important. The position must a position of board otherwise the player must re enter a position.
+.. The player is asked to confirm its choice, if the answer begins with an 'o' that means yes, if the answer begins with an 'n' that means no. The player must enters an answer until this one begins with 'o' or 'n'. If it's 'n' the board is printed again and the player has to choose a new position. If it's 'o' the token is placed with respect to the rules.
+.. The turn of the player ends.
+
+. The game is ending when the board is full. The score of each player is printed.
